@@ -1,9 +1,7 @@
 <mj-head>
     <mj-preview>{% text "Preview Text" no_wrapper=True label="Preview Text for Email Clients"%}</mj-preview>
-    <mj-raw>
 
-       
-    </mj-raw>
+    <mj-raw></mj-raw>
 
     <mj-attributes>
         <mj-all font-family="Arial, sans-serif" />
@@ -53,11 +51,6 @@
             .header-logo > table {
                 width:50%;
             }
-            
-
-
+        
     </mj-style>
-    
-    
-
 </mj-head>

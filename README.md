@@ -3,15 +3,15 @@
 This is a little template builder for Hubspot using MJML. Really simple to use. I hope. Let's get started.
 
 ### First Time Here?
-1. Clone Repo
+1. Clone Repo (if you already have a hubspot local dev environment for the portal, clone into the directory alongside hubspot.config.yml)
 2. Run `npm install`
-3. Run `npx hs init` to create a `hubspot.config.yml`
+3. Run `npx hs init` to create a `hubspot.config.yml` if one isn't already present in the environment
 4. Start building!
 
 ### Wanna build some templates? Alright, I guess you can...
 
 1. Run `npm run email`
-2. This will watch `_src/email_markup/`
+2. This will watch `_src/email_markup/` and write the `_dist` directory to `/Email` in the Design Manager.
 3. Any changes to `_src/email_markup/module_markup/` will trigger the processing of markup in mjml and convert them into module.html files in corresponding directories in `_dist/`. If a module has yet to be created, the script will build the necessary module files first.
 4. Similarly, any changes to `_src/email_markup/static_markup` will trigger the process and convert them into `filename.html` files in `_dist/email_static'.
 5. Any chances to `_src/required_markup` will trigger a build to all 

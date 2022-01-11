@@ -5,8 +5,6 @@ moduleName[0]
 console.log('Creating the ' + moduleName + ' module');
 
 
-
-
 // create new directory
 const createDir = (moduleName) => {
     const dir = '_dist/email_modules/' + moduleName + '.module';
@@ -69,25 +67,19 @@ const createHtml = (moduleName) => {
 
 }
 
-
-
 const createModule = (moduleName) => {
     const dir = '_dist/email_modules/' + moduleName + '.module';
-
     fs.access(dir, function (err) {
-       
         if (err) {
             createDir(moduleName);
             createFields(moduleName);
             createMeta(moduleName);
             createHtml(moduleName);
-
         } else {
             console.log("Module Already Created")
         }
     })
 }
-
 
 createModule(moduleName);
 
