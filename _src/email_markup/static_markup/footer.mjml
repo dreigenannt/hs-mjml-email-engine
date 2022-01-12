@@ -6,9 +6,9 @@
             <mj-section css-class="round-border">
                 <mj-column background-color="#fff" vertical-align="bottom">
                     <mj-text>
-                        <h1>Here's your footer</h1>
+                        <h2>Here's your footer</h2>
                         <p>Get started Sonny</p>
-                        <p >
+                        <p>
                             {{ site_settings.company_name }}
                             {{ site_settings.company_street_address_1 }}
                             {{ site_settings.company_street_address_2 }}
